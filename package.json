@@ -1,0 +1,16 @@
+{
+    "version": "0.1-dev",
+    "name": "net.behpardaz.loadnativelib",
+    "cordova_name": "loadnativelib",
+    "description": "Cordova loadnativelib Plugin",
+    "license": "Apache 2.0",
+    "keywords": [
+        "cordova",
+        "loadnativelib"
+    ],
+    "platforms": [
+        "ios",
+        "android"
+    ],
+    "engines": []
+}

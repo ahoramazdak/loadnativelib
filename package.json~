@@ -1,0 +1,16 @@
+{
+    "version": "0.2.9-dev",
+    "name": "com.arbbilisim.native",
+    "cordova_name": "Bridge",
+    "description": "Cordova Bridge Plugin",
+    "license": "Apache 2.0",
+    "keywords": [
+        "cordova",
+        "bridge"
+    ],
+    "platforms": [
+        "ios",
+        "android"
+    ],
+    "engines": []
+}

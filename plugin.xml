@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.arbbilisim.native" version="0.2.9-dev" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>Bridge</name>
+    <description>Cordova Bridge Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,bridge</keywords>
+    <js-module name="Bridge" src="www/Bridge.js">
+        <clobbers target="cordova.plugins.Bridge" />
+    </js-module>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="Bridge">
+                <param name="ios-package" value="Bridge" />
+            </feature>
+        </config-file>
+        <header-file src="src/ios/Bridge.h" />
+        <source-file src="src/ios/Bridge.m" />
+    </platform>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="Bridge">
+                <param name="android-package" value="com.arbbilisim.Bridge" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/Bridge.java" target-dir="src/com/arbbilisim/Bridge" />
+    </platform>
+</plugin>
